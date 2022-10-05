@@ -1,16 +1,13 @@
-import classes.CalculadorArea;
-import classes.Circulo;
-import classes.Quadrado;
+import classes.TiroAoAlvo;
+import classes.Videogame;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Circulo circ = new Circulo(2);
-        Quadrado quadro = new Quadrado(5);
-        
-        CalculadorArea calcular = new CalculadorArea();
-
-        System.out.println(calcular.somarAreas(quadro, quadro));
+        Videogame psN = new Videogame();
+        psN.ligar();
+        psN.jogar(new TiroAoAlvo());
+        psN.fechar();
         
     }
 }
