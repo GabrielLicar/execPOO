@@ -1,6 +1,6 @@
 package classes;
 
-public class Circulo {
+public class Circulo implements FiguraGeometrica{
 
     // Atributos;
     private int raio;
@@ -11,6 +11,8 @@ public class Circulo {
     }
 
     //Metodos Especiais;
+    
+    @Override
     public double calcularArea() {
         return Math.PI * Math.pow(raio, 2);
     }
@@ -23,6 +25,8 @@ public class Circulo {
     public void setRaio(int raio) {
         this.raio = raio;
     }
+
+    
 
     
     

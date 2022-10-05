@@ -1,6 +1,6 @@
 package classes;
 
-public class Quadrado {
+public class Quadrado implements FiguraGeometrica{
     
     //Atributo;
     private int lado;
@@ -9,10 +9,13 @@ public class Quadrado {
     public Quadrado(int lado) {
         this.lado = lado;
     }
+    
     //Método Especiais;
-    public int gerarArea() {
+    @Override
+    public double calcularArea() {
         return (int) Math.pow(lado, 2);
     }
+
     //Método Getters & Setters;
     public int getLado() {
         return lado;
@@ -20,4 +23,5 @@ public class Quadrado {
     public void setLado(int lado) {
         this.lado = lado;
     }
+    
 }

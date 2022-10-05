@@ -9,7 +9,7 @@ public class App {
 
         Quadrado quadro = new Quadrado(5);
 
-        System.out.println(quadro.gerarArea());
+        System.out.println(quadro.calcularArea());
 
     }
 }
