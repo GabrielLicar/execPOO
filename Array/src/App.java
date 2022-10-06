@@ -1,16 +1,25 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class App {
     public static void main(String[] args) throws Exception {   
+
+        ArrayList<String> nomes = new ArrayList<String>();
+
+        nomes.add("Luffy");
+        nomes.add("Zoro");
         
-        ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
-        pessoas.add(new Pessoa("Joao", 18));
-        pessoas.add(new Pessoa("Paulo", 17));
 
-        for (Pessoa pessoa : pessoas) {
-            System.out.println(pessoa.getNome());
+        /*
+        *sort -> ordenar
+        *Collections.sort(numeros);
+        *Revertendo a ordem para decrescente com Collections.reverseOrder()
+        */
+        Collections.sort(nomes, Collections.reverseOrder());
+
+        for (String nome : nomes) {
+            System.out.println(nome);
         }
-
 
     }
 }
