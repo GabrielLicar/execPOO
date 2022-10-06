@@ -24,9 +24,20 @@ public class App {
             System.out.println(ArrayEstatico[indice]);
         }
 
-        System.out.println("Imprindo o Array Dinamico/ArrayList");
-        for (int indice = 0; indice < ArrayDinamico.size(); indice ++) {
-            System.out.println(ArrayDinamico.get(indice));
+        System.out.println("Remover Naruto");
+        ArrayDinamico.remove(1); // remove -> remove um elemento por indice
+
+        //ArrayDinamico.clear(); // clear -> Limpa o ArrayList
+
+        /**
+         * System.out.println("Imprindo o Array Dinamico/ArrayList");
+         *for (int indice = 0; indice < ArrayDinamico.size(); indice ++) {
+         *    String nome = ArrayDinamico.get(indice);
+         *    System.out.println(nome);
+         *}
+         */
+        for (String nome : ArrayDinamico) {
+            System.out.println(nome);
         }
 
     }
